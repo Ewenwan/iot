@@ -1,4 +1,4 @@
-﻿* [微控制器](hardware/outline.md) 
+* [微控制器](hardware/outline.md) 
   * [树莓派](hardware/raspberry/intro.md)
       * [树莓派硬件系统](hardware/raspberry/architecture.md)
       * [树莓派软件系统](hardware/raspberry/system.md)

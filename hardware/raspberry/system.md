@@ -15,7 +15,7 @@ windows下有现成的工具可用，所以windows下其实更简单，但手头
 
 SD系统写入成功。
 
-![](../../imgs/1.2-0.png)
+![](../../imgs/1.1.2-0.png)
 
 #### PS:
 
@@ -28,7 +28,7 @@ config_hdmi_boost=4 //取消注释
 ``` 
 ### 连接树莓派
 采用ssh的方式连接树莓派，mac下下了一个Ip Scanner查看局域网里设备ip地址。找到Raspberra pi的ip地址。
-![](../../imgs/1.2-1.png)
+![](../../imgs/1.1.2-1.png)
 
 树莓派默认的账户: pi，密码：raspberry。（之前的操作系统必须先链接显示器，用键盘确认），ssh首次登录会生成密钥，选择yes,连接```ssh pi@ip```,输入密码，登录成功。
 
@@ -41,22 +41,22 @@ config_hdmi_boost=4 //取消注释
 ### 安装nodejs
 因为项目时基于node开发的，所以只需要装一下node即可。树莓派使用的架构用的架构是ARMv6，所以需要下载一个ARMv6版本的node，linux下下载命令``` wget https://nodejs.org/dist/v4.3.1/node-v4.3.1-linux-armv6l.tar.xz ```
 
-![](../../imgs/1.2-4.png)
+![](../../imgs/1.1.2-4.png)
 
 等待下载，家里网速太慢。。。
 
 下载成功之后需要解压.xz文件，先```xz -d xxx.tar.xz```将xxx.tar.xz解压成xxx.tar。然后，再用 ```tar xvf xxx.tar```来解包
 
-![](../../imgs/1.2-3.png)
+![](../../imgs/1.1.2-3.png)
 
 由于node已经编译过了，不需要在本地编译了，直接使用即可，done.
 
 ### 测试Demo
 
-![](../../imgs/1.2-5.png)
+![](../../imgs/1.1.2-5.png)
 
-![](../../imgs/1.2-6.png)
+![](../../imgs/1.1.2-6.png)
 
-![](../../imgs/1.2-7.png)
+![](../../imgs/1.1.2-7.png)
 
 Done，环境搭建完成。
