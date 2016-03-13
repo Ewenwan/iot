@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>树莓派 | 简介</title>
+        <title>点亮LED | 简介</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,8 @@
         
     
     
-    <link rel="next" href="../../hardware/raspberry/architecture.html" />
     
-    
-    <link rel="prev" href="../../hardware/outline.html" />
+    <link rel="prev" href="../../hardware/ardunio/intro.html" />
     
 
         
@@ -49,9 +47,9 @@
         
         
     <div class="book"
-        data-level="1.1"
-        data-chapter-title="树莓派"
-        data-filepath="hardware/raspberry/intro.md"
+        data-level="1.2.2"
+        data-chapter-title="点亮LED"
+        data-filepath="hardware/ardunio/ar-helloword.md"
         data-basepath="../.."
         data-revision="Sun Mar 13 2016 18:30:15 GMT+0800 (中国标准时间)"
         data-innerlanguage="">
@@ -98,7 +96,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1" data-path="hardware/raspberry/intro.html">
+        <li class="chapter " data-level="1.1" data-path="hardware/raspberry/intro.html">
             
                 
                     <a href="../../hardware/raspberry/intro.html">
@@ -172,7 +170,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="hardware/ardunio/ar-helloword.html">
+        <li class="chapter active" data-level="1.2.2" data-path="hardware/ardunio/ar-helloword.html">
             
                 
                     <a href="../../hardware/ardunio/ar-helloword.html">
@@ -251,54 +249,35 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="&#x6811;&#x8393;&#x6D3E;">&#x6811;&#x8393;&#x6D3E;</h1>
-<h2 id="&#x6811;&#x8393;&#x6D3E;&#x7B80;&#x4ECB;">&#x6811;&#x8393;&#x6D3E;&#x7B80;&#x4ECB;</h2>
-<p>Raspberry Pi&#xFF0C;&#x4E2D;&#x6587;&#x540D;&#xFF1A;&#x6811;&#x8393;&#x6D3E;&#x3002;&#x6811;&#x8393;&#x6D3E;&#x7531;&#x6CE8;&#x518C;&#x4E8E;&#x82F1;&#x56FD;&#x7684;&#x6148;&#x5584;&#x7EC4;&#x7EC7;&#x201C;Raspberry Pi &#x57FA;&#x91D1;&#x4F1A;&#x201D;&#x5F00;&#x53D1;&#xFF0C;&#x65E8;&#x5728;&#x4E8E;&#x5B66;&#x751F;&#x8BA1;&#x7B97;&#x673A;&#x7F16;&#x7A0B;&#x6559;&#x80B2;&#xFF0C;&#x6811;&#x8393;&#x6D3E;&#x5B98;&#x65B9;&#x7684;&#x5173;&#x952E;&#x8BCD;&#x5C31;&#x662F;&#xFF1A;&quot;Teach, Learn, and Make with Raspberry Pi&quot;&#x3002;&#x5728;2006&#x5E74;&#xFF0C;&#x6811;&#x8393;&#x6D3E;&#x65E9;&#x671F;&#x6982;&#x5FF5;&#x662F;&#x57FA;&#x4E8E;<a href="http://www.atmel.com/" target="_blank">Atmel</a>(Atmel&#x516C;&#x53F8;&#x4F1A;&#x5728;&#x5355;&#x7247;&#x673A;&#x4E00;&#x7AE0;&#x4E2D;&#x6709;&#x4ECB;&#x7ECD;)&#x7684; ATmega644&#x5355;&#x7247;&#x673A;&#x3002;2012&#x5E74;2&#x6708;29&#x65E5;&#xFF0C;&#x6811;&#x8393;&#x6D3E;&#x57FA;&#x91D1;&#x4F1A;&#x53D1;&#x5E03;&#x4E86;256MB&#x5185;&#x5B58;&#x7684;&#x6811;&#x8393;&#x6D3E;B&#x578B;&#x3002;&#x56DB;&#x5E74;&#x540E;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;2016&#x5E74;2&#x6708;29&#x53F7;&#xFF0C;&#x57FA;&#x91D1;&#x4F1A;&#x5BA3;&#x5E03;&#x6811;&#x8393;&#x6D3E;3 B&#x578B;&#x5C06;&#x4EE5;35&#x7F8E;&#x5143;&#x7684;&#x4EF7;&#x683C;&#x53D1;&#x552E;&#x3002;</p>
-<h2 id="&#x6811;&#x8393;&#x53C2;&#x6570;&#x5BF9;&#x6BD4;">&#x6811;&#x8393;&#x53C2;&#x6570;&#x5BF9;&#x6BD4;</h2>
-<p>&#x4E0E;&#x524D;&#x4E09;&#x6B3E;&#x6BD4;&#x8F83;&#xFF08;&#x5305;&#x62EC;&#x6811;&#x8393;&#x6D3E; B+&#xFF09;&#xFF0C;&#x6811;&#x8393;&#x6D3E;3&#x5728;&#x786C;&#x4EF6;&#x914D;&#x7F6E;&#x4E0A;&#x6709;&#x4EC0;&#x4E48;&#x4E0D;&#x4E00;&#x6837;&#x5462;&#xFF1F;
-&#x4EE5;&#x4E0B;&#x662F;&#x4E3B;&#x8981;&#x51E0;&#x6B3E;&#x6811;&#x8393;&#x6D3E;&#xFF08;&#x4E0D;&#x5305;&#x62EC;&#x6811;&#x8393;&#x6D3E;A+&#x53CA;Zero&#xFF09;&#x7684;&#x4E3B;&#x8981;&#x53C2;&#x6570;&#x5BF9;&#x6BD4;&#xFF1A;</p>
-<table>
-<thead>
-<tr>
-<th>&#x786C;&#x4EF6;</th>
-<th>A&#x578B; (&#x4E00;&#x4EE3;&#xFF09;</th>
-<th>B&#x578B; (&#x4E8C;&#x4EE3;)</th>
-<th>B+&#x7248;</th>
-<th>&#x6811;&#x8393;&#x6D3E;3 B&#x578B;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CPU</td>
-<td>ARM1176JZF-S&#x6838;&#x5FC3;&#xFF08;ARM11&#x7CFB;&#x5217;&#xFF09;700MHz</td>
-<td>900MHz&#x7684;&#x56DB;&#x6838;  Cortex-A7</td>
-<td>&#x540C;&#x5DE6;</td>
-<td>1.2GHz &#x56DB;&#x6838; 64 &#x4F4D; ARMv8 &#x5904;&#x7406;&#x5668;</td>
-</tr>
-<tr>
-<td>SoC&#xFF08;&#x7CFB;&#x7EDF;&#x7EA7;&#x82AF;&#x7247; )</td>
-<td>Broadcom BCM2835</td>
-<td>Broadcom BCM2835</td>
-<td>&#x540C;&#x5DE6;</td>
-<td>Broadcom BCM2837</td>
-</tr>
-<tr>
-<td>GPU&#xFF08;&#x56FE;&#x5F62;&#x5904;&#x7406;&#x5668;&#xFF09;</td>
-<td>Broadcom VideoCore IV, OpenGL ES 2.0, 1080p 30 h.264/MPEG-4 AVC &#x9AD8;&#x6E05;&#x89E3;&#x7801;&#x5668;</td>
-<td>&#x540C;&#x5DE6;</td>
-<td>&#x540C;&#x5DE6;</td>
-<td>&#x540C;&#x5DE6;</td>
-</tr>
-<tr>
-<td>&#x5185;&#x5B58;</td>
-<td>256MB</td>
-<td>512MB</td>
-<td>512MB</td>
-<td>1GB</td>
-</tr>
-</tbody>
-</table>
-<p>&#x636E;&#x8BF4;&#xFF0C;&#x6811;&#x8393;&#x6D3E;3&#x5916;&#x89C2;&#x76F8;&#x5BF9;&#x524D;&#x51E0;&#x6B3E;&#x6811;&#x8393;&#x6D3E;&#x5E76;&#x6CA1;&#x6709;&#x592A;&#x591A;&#x53D8;&#x5316;&#xFF0C;&#x4F46;&#x6027;&#x80FD;&#x63D0;&#x5347;&#x4E86;50%&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x5C31;&#x5728;&#x6811;&#x8393;&#x6D3E;3&#x53D1;&#x5E03;&#x51E0;&#x5929;&#x4E4B;&#x540E;&#xFF0C;windows 10 iot&#x5C31;&#x63D0;&#x4F9B;&#x4E86;&#x652F;&#x6301;&#x5BF9;&#x6811;&#x8393;&#x6D3E;3&#x7684;&#x652F;&#x6301;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x5927;&#x5BB6;&#x5BF9;&#x8FD9;&#x6B3E;&#x5361;&#x7247;&#x673A;&#x7684;&#x9752;&#x7750;&#x3002;&#x4E8E;&#x662F;&#xFF0C;&#x6211;&#x7279;&#x610F;&#x67E5;&#x4E86;&#x4E00;&#x4E0B;BCM2835&#x4EE5;&#x53CA;BCM2837&#x8FD9;&#x4E24;&#x6B3E;&#x7CFB;&#x7EDF;&#x7EA7;&#x82AF;&#x7247;&#xFF0C;&#x4F46;&#x91CC;&#x9762;&#x4E3B;&#x8981;&#x4ECB;&#x7ECD;&#x4E86;&#x6811;&#x8393;&#x7684;&#x5916;&#x56F4;&#x6269;&#x5C55;&#xFF0C;&#x5B9A;&#x65F6;&#x5668;&#xFF0C;&#x4E2D;&#x65AD;&#xFF0C;GPIO,PWM&#x7B49;&#xFF0C;&#x6709;&#x66F4;&#x9AD8;&#x7684;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x53EF;&#x4EE5;&#x770B;&#x770B;&#x3002;&#x5982;&#x679C;&#x60F3;&#x770B;&#x5177;&#x4F53;&#x7684;&#x82AF;&#x7247;&#x4E66;&#x518C;&#xFF0C;&#x53EF;&#x5230;datasheet&#x8FDB;&#x884C;&#x4E0B;&#x8F7D;&#xFF0C;&#x9644;&#x4E0A;<a href="http://www.alldatasheet.com/datasheet-pdf/pdf/502533/BOARDCOM/BCM2835.html" target="_blank">BCM2835&#x94FE;&#x63A5;&#x3002;</a></p>
+                        <h1 id="&#x70B9;&#x4EAE;led&#x706F;">&#x70B9;&#x4EAE;LED&#x706F;</h1>
+<p>&#x4E0A;&#x4E00;&#x8282;&#x4ECB;&#x7ECD;&#x4E86; Ardunio UNO &#x7684;&#x786C;&#x4EF6;&#x7ED3;&#x6784;&#xFF0C;&#x8FD9;&#x4E00;&#x8282;&#x5C06;&#x4F1A;&#x5199;&#x4E00;&#x4E2A; UNO &#x7684; &#x201C;hello word&#x201D; &#x7A0B;&#x5E8F;&#xFF0C;&#x5728;&#x8F6F;&#x4EF6;&#x9886;&#x57DF;&#x901A;&#x5E38;&#x4F1A;&#x4EE5;&#x8F93;&#x51FA; &#x201C;hello word&#x201D; &#x4F5C;&#x4E3A;&#x5F00;&#x59CB;&#xFF0C;&#x800C;&#x5728;&#x786C;&#x4EF6;&#x9886;&#x57DF;&#x901A;&#x5E38;&#x662F;&#x4EE5;&#x70B9;&#x4EAE; LED &#x706F;&#x4F5C;&#x4E3A;&#x5F00;&#x59CB;&#x3002;</p>
+<h2 id="&#x642D;&#x5EFA;&#x73AF;&#x5883;">&#x642D;&#x5EFA;&#x73AF;&#x5883;</h2>
+<p>&#x9996;&#x5148;&#xFF0C;&#x5728;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x4E4B;&#x524D;&#xFF0C;&#x9700;&#x8981;&#x4E0B;&#x8F7D;&#x7F16;&#x8BD1;&#x73AF;&#x5883;&#x548C;&#x5B89;&#x88C5;&#x9A71;&#x52A8;&#x3002;&#x8FD9;&#x91CC;&#x4EE5;mac&#x4E3A;&#x4F8B;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x4E0B;&#x8F7D;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x5B98;&#x65B9;&#x7684;<a href="https://www.arduino.cc/en/Guide/MacOSX" target="_blank">Getting Started w/ Arduino on Mac OS X</a>&#x3002;&#x4ECE;&#x5B98;&#x65B9;&#x4E0B;&#x8F7D;IDE&#x65F6;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x5148;&#x6350;&#x732E;&#x624D;&#x80FD;&#x4E0B;&#x8F7D;&#xFF0C;&#x4E3A;&#x4E86;&#x8868;&#x793A;&#x5BF9;IDE&#x7684;&#x652F;&#x6301;&#xFF0C;&#x6211;&#x6350;&#x732E;&#x4E86;&#x4E24;&#x7F8E;&#x5143;&#x3002;&#x5F53;&#x7136;&#x5982;&#x679C;&#x4F60;&#x6CA1;&#x6709;&#x4FE1;&#x7528;&#x5361;&#x6216;&#x8005;&#x5176;&#x4ED6;&#x7684;&#x5408;&#x9002;&#x7684;&#x652F;&#x4ED8;&#x624B;&#x6BB5;&#xFF0C;&#x8FD9;&#x91CC;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7B2C;&#x4E09;&#x65B9;&#x7684;<a href="http://www.maczapp.com/arduino" target="_blank">&#x4E0B;&#x8F7D;&#x5E73;&#x53F0;</a>&#x3002;&#x6309;&#x7167;&#x4E0A;&#x8FF0;&#x65B9;&#x6CD5;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x518D;&#x5B89;&#x88C5;&#x4E32;&#x53E3;&#x9A71;&#x52A8;&#xFF0C;<a href="http://www.ftdichip.com/Drivers/VCP/MacOSX/FTDIUSBSerialDriver_v2_2_18.dmg" target="_blank">&#x4E0B;&#x8F7D;&#x94FE;&#x63A5;</a>&#x3002;&#x9A71;&#x52A8;&#x5B89;&#x88C5;&#x5B8C;&#x6BD5;&#x4E4B;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x68C0;&#x67E5;&#x9A71;&#x52A8;&#x662F;&#x5426;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;&#x63D2;&#x4E0A;&#x8FDE;&#x63A5;&#x7EBF;&#xFF0C;&#x8F93;&#x5165;<code>ls /dev/tty.*</code></p>
+<p><img src="../../imgs/1.2.2-1.png" alt=""></p>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x201C;/dev/tty.usbmodem1421&#x201D;&#xFF0C;&#x9A71;&#x52A8;&#x5B89;&#x88C5;&#x6210;&#x529F;&#x3002;</p>
+<h2 id="&#x66F4;&#x6539;&#x914D;&#x7F6E;">&#x66F4;&#x6539;&#x914D;&#x7F6E;</h2>
+<p>&#x5728;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x4E4B;&#x524D;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x66F4;&#x6539;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x9879;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF0C;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x5F00;&#x53D1;&#x677F;&#xFF0C;&#x8FD9;&#x91CC;&#x9009;&#x7528;&#x7684;&#x662F; UNO &#x5F00;&#x53D1;&#x677F;&#x3002;</p>
+<p><img src="../../imgs/1.2.2-2.png" alt=""></p>
+<p>&#x7B2C;&#x4E8C;&#x90E8;&#xFF0C;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x4E0B;&#x8F7D;&#x7AEF;&#x53E3;&#xFF0C;&#x4E0A;&#x9762;&#x6253;&#x5370;&#x7684;&#x7AEF;&#x53E3;&#x662F;&#x201C;/dev/tty.usbmodem1421&#x201D;&#xFF0C;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x5B83;&#x3002;</p>
+<p><img src="../../imgs/1.2.2-3.png" alt=""></p>
+<h2 id="&#x7F16;&#x5199;&#x7A0B;&#x5E8F;">&#x7F16;&#x5199;&#x7A0B;&#x5E8F;</h2>
+<p>Ardunio &#x91C7;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x5957;&#x8BED;&#x8A00;&#x89C4;&#x8303;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x4EE5;&#x88AB;&#x5206;&#x89E3;&#x4E3A;&#x4E09;&#x4E2A;&#x4E3B;&#x8981;&#x90E8;&#x5206;&#xFF1A;&#x7ED3;&#x6784;&#x3001;&#x503C;&#xFF08;&#x53D8;&#x91CF;&#x548C;&#x5E38;&#x91CF;&#xFF09;&#x4EE5;&#x53CA;&#x51FD;&#x6570;&#x3002;
+&#x4E00;&#x822C;&#x7ED3;&#x6784;&#x4E2D;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x51FD;&#x6570;&#xFF1A;&#x201C;setup()&#x201D;&#x3001;&#x201C;loop()&#x201D;&#x3002;&#x201C;setup()&#x201D; &#x662F;&#x5728;&#x201C;sketch&#x201D;&#x5F00;&#x59CB;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x7528;&#x4E8E;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x3001;&#x7BA1;&#x811A;&#x3001;&#x5F00;&#x59CB;&#x4F7F;&#x7528;&#x5E93;&#x6587;&#x4EF6;&#x7B49;&#x7B49;&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x53EA;&#x4F1A;&#x5728;&#x5F00;&#x53D1;&#x677F;&#x4E0A;&#x7535;&#x6216;&#x590D;&#x4F4D;&#x65F6;&#x88AB;&#x8C03;&#x7528;&#x4E00;&#x6B21;&#x3002;&#x800C;&#x201C;loop()&#x201D;&#x51FD;&#x6570;&#x5219;&#x662F;&#x5728;&#x201C;setup()&#x201D;&#x51FD;&#x6570;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#x540E;&#xFF0C;&#x4E00;&#x76F4;&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x3002;&#x70B9;&#x4EAE; LED &#x7684;&#x601D;&#x8DEF;&#x662F;&#x53EA;&#x9700;&#x8981;&#x5728;&#x7A0B;&#x5E8F;&#x5F00;&#x59CB;&#x65F6;&#xFF0C;&#x5C06; LED &#x7F6E;&#x4E8E;&#x70B9;&#x4EAE;&#x72B6;&#x6001;&#x3002;&#x4E0A;&#x4E00;&#x7AE0;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;UNO &#x5F00;&#x53D1;&#x677F;&#x7684;13&#x7BA1;&#x811A;&#x8FDE;&#x63A5;&#x5728; LED &#x7684;&#x706F;&#x7684;&#x4E00;&#x7AEF;&#xFF0C;&#x800C; LED &#x7684;&#x706F;&#x53E6;&#x4E00;&#x7AEF;&#x8FDE;&#x63A5;&#x5230;&#x4E86;&#x4F4E;&#x7535;&#x5E73;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x9700;&#x5728;&#x521D;&#x59CB;&#x5316;&#x65F6;&#xFF0C;&#x7ED9;13&#x7BA1;&#x811A;&#x4E0A;&#x8D4B;&#x4E0A;&#x9AD8;&#x7535;&#x5E73;&#x4FBF;&#x53EF;&#x5B8C;&#x6210;&#x64CD;&#x4F5C;&#x3002;</p>
+<pre><code>// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin 13 as an output.
+  pinMode(13, OUTPUT);
+  // turn the LED on (HIGH is the voltage level)
+   digitalWrite(13, HIGH);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+
+}
+</code></pre><p>&#x7F16;&#x8BD1;&#x4E0B;&#x8F7D;&#x5230; UNO &#x677F;&#x4E2D;&#xFF0C;Done&#xFF0C;&#x6548;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="../../imgs/1.2.2-4.png" alt=""></p>
 
                     
                     </section>
@@ -309,10 +288,8 @@
         </div>
 
         
-        <a href="../../hardware/outline.html" class="navigation navigation-prev " aria-label="Previous page: 微控制器"><i class="fa fa-angle-left"></i></a>
+        <a href="../../hardware/ardunio/intro.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Ardunio"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="../../hardware/raspberry/architecture.html" class="navigation navigation-next " aria-label="Next page: 树莓派硬件系统"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
